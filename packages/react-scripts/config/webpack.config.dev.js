@@ -133,7 +133,7 @@ module.exports = {
           /\.css$/,
           /\.json$/,
           /\.svg$/,
-          /\.scss$/,
+          /\.(sass|scss)$/,
         ],
         loader: 'url',
         query: {
@@ -182,7 +182,7 @@ module.exports = {
       },
       // SASS loader
       {
-        test: /\.scss$/,
+        test: /\.(sass|scss)$/,
         include: paths.appSrc,
         loaders: ["style", "css", "sass"]
       },
